@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="Dashboard" style="width: 375px; height: 812px; position: relative; background: white">
+  <div class="ProfileAvatar" style="width: 60px; height: 60px; left: 145px; top: 276px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
+    <img class="Graphic" style="width: 60px; height: 60px; position: relative; background: linear-gradient(0deg, #B5DBFF 0%, #B5DBFF 100%); border-radius: 48px" src="https://via.placeholder.com/60x60" />
+  </div>
+  <div class="Frame2" style="padding-top: 5px; padding-bottom: 5px; padding-right: 78px; left: 88px; top: 349px; position: absolute; background: #A99C9C; justify-content: flex-start; align-items: center; display: inline-flex">
+    <div class="Copy" style="width: 100px; align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+      <div class="Name" style="width: 100px; text-align: center; color: black; font-size: 14px; font-family: Inter; font-weight: 500; line-height: 19.60px; word-wrap: break-word">Name</div>
+    </div>
+  </div>
+  <div class="MobileNavIcon" style="width: 375px; height: 50px; padding-top: 16px; padding-bottom: 34px; padding-left: 16px; padding-right: 16px; left: 0px; top: 762px; position: absolute; border-top: 1px #EFEFF0 solid; justify-content: space-between; align-items: center; display: inline-flex">
+    <div class="NavTab" style="padding: 8px; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+      <div class="IconlyLightOutlineHome" style="width: 28px; height: 28px; justify-content: center; align-items: center; display: inline-flex">
+        <div class="IconlyLightOutlineHome" style="width: 28px; height: 28px; padding-top: 1.17px; padding-bottom: 1.74px; padding-left: 2.33px; padding-right: 1.75px; justify-content: center; align-items: center; display: inline-flex">
+          <div class="Home" style="width: 23.92px; height: 25.09px; position: relative">
+            <div class="Clip2" style="width: 23.92px; height: 25.09px; left: 0px; top: 0px; position: absolute; background: black"></div>
+            <img class="Fill1" style="width: 23.92px; height: 25.09px; left: -0px; top: -0px; position: absolute" src="https://via.placeholder.com/24x25" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="NavTab" style="padding: 8px; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+      <div class="IconlyLightOutlineSearch" style="width: 28px; height: 28px; justify-content: center; align-items: center; display: inline-flex">
+        <div class="IconlyLightOutlineSearch" style="width: 28px; height: 28px; padding-top: 2.33px; padding-bottom: 1.49px; padding-left: 2.33px; padding-right: 2.03px; justify-content: center; align-items: center; display: inline-flex">
+          <div class="Search" style="width: 23.64px; height: 24.18px; position: relative">
+            <div class="Group3" style="width: 22.72px; height: 22.72px; left: 0px; top: 0px; position: absolute">
+              <div class="Clip2" style="width: 22.72px; height: 22.72px; left: 0px; top: 0px; position: absolute; background: black"></div>
+              <img class="Fill1" style="width: 22.72px; height: 22.72px; left: -0px; top: 0px; position: absolute" src="https://via.placeholder.com/23x23" />
+            </div>
+            <div class="Group6" style="width: 5.86px; height: 5.85px; left: 17.78px; top: 18.32px; position: absolute">
+              <div class="Clip5" style="width: 5.86px; height: 5.85px; left: 0px; top: 0px; position: absolute; background: black"></div>
+              <div class="Fill4" style="width: 5.86px; height: 5.85px; left: 0px; top: 0px; position: absolute; background: #61646B"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="NavTab" style="padding: 8px; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+      <div class="IconlyLightOutlinePlus" style="width: 28px; height: 28px; justify-content: center; align-items: center; display: inline-flex">
+        <div class="IconlyLightOutlinePlus" style="width: 28px; height: 28px; padding-top: 1.17px; padding-bottom: 1.75px; padding-left: 1.17px; padding-right: 1.75px; justify-content: center; align-items: center; display: inline-flex">
+          <div class="Plus" style="width: 25.08px; height: 25.08px; position: relative">
+            <div class="Fill1" style="width: 1.75px; height: 10.30px; left: 11.67px; top: 7.38px; position: absolute; background: #61646B"></div>
+            <div class="Fill3" style="width: 10.31px; height: 1.75px; left: 7.39px; top: 11.66px; position: absolute; background: #61646B"></div>
+            <img class="Fill5" style="width: 25.08px; height: 25.08px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/25x25" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="NavTab" style="padding: 8px; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+      <div class="IconlyLightOutlineNotification" style="width: 28px; height: 28px; justify-content: center; align-items: center; display: inline-flex">
+        <div class="IconlyLightOutlineNotification" style="width: 28px; height: 28px; padding-top: 1.17px; padding-bottom: 1.75px; padding-left: 3.50px; padding-right: 2.92px; justify-content: center; align-items: center; display: inline-flex">
+          <div class="Notification" style="width: 21.58px; position: relative">
+            <div class="Group3" style="width: 21.58px; height: 20.24px; left: 0px; top: 0px; position: absolute">
+              <div class="Clip2" style="width: 21.58px; height: 20.24px; left: 0px; top: 0px; position: absolute; background: black"></div>
+              <img class="Fill1" style="width: 21.58px; height: 20.24px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/22x20" />
+            </div>
+            <div class="Fill4" style="width: 7.43px; height: 3.08px; left: 7.02px; top: 22px; position: absolute; background: #61646B"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="NavTab" style="padding: 8px; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+      <div class="IconlyLightOutlineProfile" style="width: 28px; height: 28px; justify-content: center; align-items: center; display: inline-flex">
+        <div class="IconlyLightOutlineProfile" style="width: 28px; height: 28px; padding-top: 2.33px; padding-bottom: 2.48px; padding-left: 4.67px; padding-right: 4.85px; justify-content: center; align-items: center; display: inline-flex">
+          <div class="Profile" style="width: 18.48px; position: relative">
+            <div class="Group3" style="width: 18.48px; height: 8.60px; left: 0px; top: 14.58px; position: absolute">
+              <div class="Clip2" style="width: 18.48px; height: 8.60px; left: 0px; top: 0px; position: absolute; background: black"></div>
+              <img class="Fill1" style="width: 18.48px; height: 8.60px; left: -0px; top: 0px; position: absolute" src="https://via.placeholder.com/18x9" />
+            </div>
+            <div class="Group6" style="width: 12.39px; height: 12.39px; left: 3.04px; top: 0px; position: absolute">
+              <div class="Clip5" style="width: 12.39px; height: 12.39px; left: 0px; top: 0px; position: absolute; background: black"></div>
+              <img class="Fill4" style="width: 12.39px; height: 12.39px; left: 0px; top: -0px; position: absolute" src="https://via.placeholder.com/12x12" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="IconlyLightOutlineChart" style="width: 24px; height: 24px; left: 111px; top: 402px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
+    <div class="IconlyLightOutlineChart" style="width: 24px; height: 24px; padding-top: 1px; padding-bottom: 1.50px; padding-left: 1px; padding-right: 1.50px; justify-content: center; align-items: center; display: inline-flex">
+      <div class="Chart" style="width: 21.50px; height: 21.50px; position: relative">
+        <div class="Fill1" style="width: 1.50px; height: 8.36px; left: 5.37px; top: 8.20px; position: absolute; background: black"></div>
+        <div class="Fill3" style="width: 1.50px; height: 11.64px; left: 10.04px; top: 4.92px; position: absolute; background: black"></div>
+        <div class="Fill5" style="width: 1.50px; height: 4.73px; left: 14.63px; top: 11.83px; position: absolute; background: black"></div>
+        <img class="Fill7" style="width: 21.50px; height: 21.50px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/21x21" />
+      </div>
+    </div>
+  </div>
+  <div class="IconlyLightOutlineWallet" style="width: 24px; height: 24px; left: 163px; top: 402px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
+    <div class="IconlyLightOutlineWallet" style="width: 24px; height: 24px; padding-top: 3px; padding-bottom: 1.83px; padding-left: 2px; padding-right: 1.36px; justify-content: center; align-items: center; display: inline-flex">
+      <div class="Wallet" style="width: 20.64px; height: 19.17px; position: relative">
+        <div class="Fill1" style="width: 8.24px; height: 6.88px; left: 12.40px; top: 6.01px; position: absolute; background: black"></div>
+        <div class="Fill3" style="width: 1.81px; height: 1.50px; left: 15.24px; top: 8.64px; position: absolute; background: black"></div>
+        <div class="Group7" style="width: 20.64px; height: 19.17px; left: 0px; top: 0px; position: absolute">
+          <div class="Clip6" style="width: 20.64px; height: 19.17px; left: 0px; top: 0px; position: absolute; background: black"></div>
+          <img class="Fill5" style="width: 20.64px; height: 19.17px; left: -0px; top: 0px; position: absolute" src="https://via.placeholder.com/21x19" />
+        </div>
+        <div class="Fill8" style="width: 6.90px; height: 1.50px; left: 4.54px; top: 4.54px; position: absolute; background: black"></div>
+      </div>
+    </div>
+  </div>
+  <div class="IconlyLightOutlineProfile" style="width: 24px; height: 24px; left: 215px; top: 402px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
+    <div class="IconlyLightOutlineProfile" style="width: 24px; height: 24px; padding-top: 2px; padding-bottom: 2.13px; padding-left: 4px; padding-right: 4.16px; justify-content: center; align-items: center; display: inline-flex">
+      <div class="Profile" style="width: 15.84px; position: relative">
+        <div class="Group3" style="width: 15.84px; height: 7.37px; left: 0px; top: 12.50px; position: absolute">
+          <div class="Clip2" style="width: 15.84px; height: 7.37px; left: 0px; top: 0px; position: absolute; background: black"></div>
+          <img class="Fill1" style="width: 15.84px; height: 7.37px; left: -0px; top: 0px; position: absolute" src="https://via.placeholder.com/16x7" />
+        </div>
+        <div class="Group6" style="width: 10.62px; height: 10.62px; left: 2.61px; top: 0px; position: absolute">
+          <div class="Clip5" style="width: 10.62px; height: 10.62px; left: 0px; top: 0px; position: absolute; background: black"></div>
+          <img class="Fill4" style="width: 10.62px; height: 10.62px; left: 0px; top: -0px; position: absolute" src="https://via.placeholder.com/11x11" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="Image4" style="width: 375px; height: 80px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/375x80" />
+</div>
+</body>
+</html>
