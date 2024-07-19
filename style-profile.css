@@ -506,13 +506,14 @@
     }
 }
 
-@media (min-height: 776px) {
+@media (min-height: 740px) {
     .container {
         height: 28vh;
+        top: 90px;
     }
 
     .trapezoid-svg {
-        width: 65%; /* Ширина SVG */
+        width: auto; /* Ширина SVG */
         height: auto;
     }
 
@@ -521,7 +522,7 @@
     }
 
     .small-black-rectangle {
-        width: 100px;
+        width: 88px;
         height: 17px;
         top: 5px;
     }
@@ -543,8 +544,8 @@
     }
 
     .profit-amount {
-        font-size: 48px;
-        top: 43%;
+        font-size: 40px;
+        top: 48%;
         left: 6%;
     }
 
@@ -554,12 +555,44 @@
 
     .percent {
         font-size: 16px;
-        top: 52%;
+        top: 55%;
         right: 20px;
     }
 
     .percent::before{
         content: '▴ ';
         font-size: 16px;
+    }
+
+    .medium-text {
+        font-size: 20px;
+        top: 20px; /* Отступ сверху на 20 пикселей */
+        left: 6%; /* Отступ слева на 20 пикселей */
+    }
+
+    .nickname {
+        font-size: 26px;
+        top: 40px; /* Смещение на 40 пикселей от верха */
+        left: 6%;
+    }
+
+    .green-circle {
+        width: 44px; /* Диаметр круга */
+        height: 44px; /* Диаметр круга */
+        top: 23px; /* Отступ сверху на 20 пикселей */
+        right: 6%; /* Отступ справа на 20 пикселей */
+    }
+
+    .inner-circle {
+        width: 36px; /* Диаметр внутреннего круга */
+        height: 36px; /* Диаметр внутреннего круга */
+        border-radius: 50%; /* Скругление углов до круга */
+        overflow: hidden; /* Обрезка содержимого до формы круга */
+    }
+
+    .svg-container {
+        position: absolute;
+        top: 34px; /* Отступ сверху на 20 пикселей */
+        right: 22%; /* Отступ справа на 20 пикселей */
     }
 }
