@@ -122,7 +122,7 @@
     font-weight: 300; /* Вес шрифта 300 */
     color: #d9d9d9;
     top: 13%;
-    left: 15px;
+    left: 6%;
     position: absolute;
 }
 
@@ -131,7 +131,7 @@
     font-size: 10px;
     font-weight: 500; /* Вес шрифта 500 */
     color: #a1a1a1;
-    top: 13%;
+    top: 16%;
     right: 20px;
     position: absolute;
 }
@@ -142,7 +142,7 @@
     font-weight: 200; /* Вес шрифта 300 */
     color: #fff;
     top: 45%;
-    left: 15px;
+    left: 6%;
     position: absolute;
 }
 
@@ -150,7 +150,7 @@
     content: '₽ '; /* Значок рубля и пробел перед надписью */
     color: #a1a1a1; /* Серый цвет значка рубля */
     font-family: 'Sora', sans-serif;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 100; /* Вес шрифта 300 */
 }
 
@@ -305,7 +305,7 @@
     width: calc(100% - 2px); /* Ширина прямоугольника */
     height: calc(100% - 2px); /* Высота прямоугольника */
     background-color: #fff; /* Серый цвет фона */
-    border-radius: 23px;
+    border-radius: 22px;
     position: absolute;
 }
 
@@ -340,7 +340,7 @@
 
 .upgrade-rectangle {
     width: 102px; /* Ширина прямоугольника */
-    height: 32px; /* Высота прямоугольника */
+    aspect-ratio: 51 / 16;
     background-color: #1b1b1b; /* Серый цвет фона */
     border-radius: 15px;
     position: absolute;
@@ -376,6 +376,12 @@
     top: 50%;
     transform: translateY(-50%);
  }
+
+ .ludi {
+    width: 60%; /* Ширина изображения равна ширине внутреннего круга */
+    aspect-ratio: 1 / 1;
+ }
+
 
  .bottom-line {
     position: absolute;
@@ -448,4 +454,112 @@
     .week {
         font-size: 13px;
       }
+    
+    .ref {
+        font-size: 24px;
+        top: 64%;
+    }
+
+    .more {
+        font-size: 15px;
+        top: 65%;
+    }
+}
+
+@media (min-height: 616px) {
+    .bottom-grey {
+        border-radius: 27px;
+    }
+
+    .bottom-white {
+        border-radius: 24px;
+    }
+}
+
+@media (min-height: 700px) {
+    .upgrade-rectangle {
+        width: 122px;
+        border-radius: 18px;
+
+    }
+
+    .upgrade {
+        font-size: 12px;
+        left: 15px;
+    }
+
+    .black-circle {
+        width: 33px; /* Диаметр круга */
+        border: 2px solid #0ACC58;
+    }
+
+    .plan {
+        font-size: 15px;
+    }
+
+    .priority {
+        font-size: 24px;
+    }
+
+    .priority::before {
+        font-size: 24px;
+    }
+}
+
+@media (min-height: 776px) {
+    .container {
+        height: 28vh;
+    }
+
+    .trapezoid-svg {
+        width: 65%; /* Ширина SVG */
+        height: auto;
+    }
+
+    .black-rectangle {
+        top: 25px; /* Отступ сверху */
+    }
+
+    .small-black-rectangle {
+        width: 100px;
+        height: 17px;
+        top: 5px;
+    }
+
+    .rectangle-text {
+        font-size: 11px;
+    }
+
+    .total-profit {
+        top: 15%;
+        left: 6%;
+        font-size: 16px;
+    }
+
+    .date {
+        font-size: 12px;
+        top: 18%;
+        right: 20px;
+    }
+
+    .profit-amount {
+        font-size: 48px;
+        top: 43%;
+        left: 6%;
+    }
+
+    .profit-amount::before {
+        font-size: 40px;
+    }
+
+    .percent {
+        font-size: 16px;
+        top: 52%;
+        right: 20px;
+    }
+
+    .percent::before{
+        content: '▴ ';
+        font-size: 16px;
+    }
 }
