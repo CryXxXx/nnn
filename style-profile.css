@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 /* Стиль для размеров экрана меньше 768 пикселей */
-@media (max-width: 370px) {
+@media (max-width: 400px) {
     .element1 {
       font-size: 16px; 
     }
@@ -15,15 +15,21 @@
   }
   
   /* Стиль для размеров экрана больше 768 пикселей */
-  @media (min-width: 768px) {
-    .element1 {
-      font-size: 20px; 
+  @media (min-width: 400px) {
+    .amount {
+      font-size: 32px;
+      top: 35%;
     }
   
-    .element2 {
-      font-size: 18px; 
+    .total {
+      font-size: 14px;
+    }
+
+    .week {
+      font-size: 13px;
     }
   }
+        
   
   /* Стиль для размеров экрана больше 1024 пикселей */
   @media (min-width: 1024px) {
