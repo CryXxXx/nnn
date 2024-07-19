@@ -3,44 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-/* Стиль для размеров экрана меньше 768 пикселей */
-@media (max-width: 400px) {
-    .element1 {
-      font-size: 16px; 
-    }
-  
-    .element2 {
-      font-size: 14px; 
-    }
-  }
-  
-  /* Стиль для размеров экрана больше 768 пикселей */
-  @media (min-width: 400px) {
-    .amount {
-      font-size: 32px;
-      top: 35%;
-    }
-  
-    .total {
-      font-size: 14px;
-    }
-
-    .week {
-      font-size: 13px;
-    }
-  }
-        
-  
-  /* Стиль для размеров экрана больше 1024 пикселей */
-  @media (min-width: 1024px) {
-    .element1 {
-      font-size: 24px; 
-    }
-  
-    .element2 {
-      font-size: 22px; 
-    }
-  }
 
 * {
     margin: 0;
@@ -472,3 +434,18 @@
  .bottom-icon.right {
     right: 15%;
  }
+
+ @media (min-width: 401px) {
+    .amount {
+        font-size: 32px;
+        top: 35%;
+      }
+    
+    .total {
+        font-size: 14px;
+      }
+  
+    .week {
+        font-size: 13px;
+      }
+}
