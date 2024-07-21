@@ -49,6 +49,9 @@
     height: 34px; /* Диаметр внутреннего круга */
     border-radius: 50%; /* Скругление углов до круга */
     overflow: hidden; /* Обрезка содержимого до формы круга */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .circle-image {
@@ -188,14 +191,14 @@
     min-width: 140px; /* Ширина прямоугольника */
     width: 44%;
     aspect-ratio: 7 / 5;
-    background-color: #ececec; /* Серый цвет фона */
+    background-color: #fff; /* Серый цвет фона */
     position: absolute;
     border-radius: 30px; /* Скругление углов */
-    border: 1px solid #f5f5f5; /* Светло-серая обводка в 1 пиксель */
     display: flex; /* Использование flexbox для центрирования текста */
     align-items: center; /* Вертикальное центрирование */
     justify-content: center; /* Горизонтальное центрирование */
     top: 42%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25)
 }
 
 .gray-rectangle.left {
@@ -208,13 +211,6 @@
     transform: translateX(+2%); /* Смещение на 50 пикселей от центра */
 }
 
-.white-rectangle {
-    width: calc(100% - 2px); /* Ширина прямоугольника */
-    height: calc(100% - 2px); /* Высота прямоугольника */
-    background-color: #fff; /* Серый цвет фона */
-    border-radius: 28px;
-    position: absolute;
-}
 
 .total {
     font-family: 'Sora', sans-serif;
@@ -238,7 +234,7 @@
 }
 
 .line {
-    position: relative;
+    position: absolute;
     width: 80%; /* Ширина линии */
     border-bottom: 1px solid #a1a1a1; /* Черная линия толщиной 2 пикселя */
     left: 50%;
@@ -274,7 +270,7 @@
     color: #000;
     left: 6%; /* Центровая вертикаль минус половина ширины плюс 5 пикселей */
     position: absolute;
-    top: 65%;
+    top: calc(65% - 5px);
 }
 
 .more {
@@ -284,29 +280,21 @@
     color: #454545;
     right: 7%; /* Центровая вертикаль минус половина ширины плюс 5 пикселей */
     position: absolute;
-    top: 66%;
+    top: calc(66% - 5px);
 }
 .bottom-grey {
     width: calc(100% - 30px); /* Ширина прямоугольника */
-    height: 15%; /* Высота прямоугольника */
-    background-color: #ececec; /* Серый цвет фона */
+    height: 14%; /* Высота прямоугольника */
+    background-color: #fff; /* Серый цвет фона */
     position: absolute;
-    bottom: 15%;
+    bottom: 16%;
     border-radius: 25px; /* Скругление углов */
-    border: 1px solid #f5f5f5; /* Светло-серая обводка в 1 пиксель */
     display: flex; /* Использование flexbox для центрирования текста */
     align-items: center; /* Вертикальное центрирование */
     justify-content: center; /* Горизонтальное центрирование */
     left: 50%;
     transform: translateX(-50%);
-}
-
-.bottom-white {
-    width: calc(100% - 2px); /* Ширина прямоугольника */
-    height: calc(100% - 2px); /* Высота прямоугольника */
-    background-color: #fff; /* Серый цвет фона */
-    border-radius: 22px;
-    position: absolute;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25)
 }
 
 .plan {
@@ -469,10 +457,6 @@
 @media (min-height: 616px) {
     .bottom-grey {
         border-radius: 27px;
-    }
-
-    .bottom-white {
-        border-radius: 24px;
     }
 }
 
