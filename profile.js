@@ -15,12 +15,7 @@ if (window.Telegram.WebApp.initDataUnsafe) {
 
 
 
-    // Получаем аватарку
-    const userAvatar = window.Telegram.WebApp.initDataUnsafe.user.photo_url;
 
-
-
-    document.getElementById('telegram_icon').src = userAvatar; 
 
 
 
