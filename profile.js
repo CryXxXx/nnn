@@ -2,23 +2,6 @@
 if (window.Telegram.WebApp.initDataUnsafe) {
 
 
-
-    // username на сайте
-    const userName = window.Telegram.WebApp.initDataUnsafe.user.first_name;
-
-
-
-
-
-    document.getElementById('nickname').textContent = userName; 
-
-
-
-
-
-
-
-
     // Получаем Telegram ID из initDataUnsafe
     const tgId = window.Telegram.WebApp.initDataUnsafe.user.id;
 
