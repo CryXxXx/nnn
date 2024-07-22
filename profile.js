@@ -2,12 +2,34 @@
 if (window.Telegram.WebApp.initDataUnsafe) {
 
 
+
+    // username на сайте
+    const userName = window.Telegram.WebApp.initDataUnsafe.user.first_name;
+
+
+
+
+
+    document.getElementById('nickname').textContent = userName; 
+
+
+
+
+    // Получаем аватарку
+    const userAvatar = window.Telegram.WebApp.initDataUnsafe.user.photo_url;
+
+
+
+    document.getElementById('telegram_icon').src = userAvatar; 
+
+
+
     // Получаем Telegram ID из initDataUnsafe
     const tgId = window.Telegram.WebApp.initDataUnsafe.user.id;
 
 
     // Отправляем ID на сервер
-    fetch('https://66c5-89-22-177-227.ngrok-free.app/receive_tg_id', {
+    fetch('https://2e85-89-22-177-227.ngrok-free.app/receive_tg_id', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
