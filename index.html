@@ -5,75 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пример</title>
     <link rel="stylesheet" type="text/css" href="style-profile.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-    <script>
-        // Проверяем, доступен ли объект initDataUnsafe
-if (window.Telegram.WebApp.initDataUnsafe) {
-
-
-
-// username на сайте
-const userName = window.Telegram.WebApp.initDataUnsafe.user.first_name;
-
-
-
-
-
-document.getElementById('nickname').textContent = userName; 
-
-
-
-
-// Получаем аватарку
-const userAvatar = window.Telegram.WebApp.initDataUnsafe.user.photo_url;
-
-
-
-document.getElementById('telegram_icon').src = userAvatar; 
-
-
-
-// Получаем Telegram ID из initDataUnsafe
-const tgId = window.Telegram.WebApp.initDataUnsafe.user.id;
-
-
-// Отправляем ID на сервер
-fetch('https://66c5-89-22-177-227.ngrok-free.app/receive_tg_id', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({ id: tgId })
-})
-.then(response => {
-  if (!response.ok) {
-    throw new Error('Сетевая ошибка при обращении к серверу');
-  }
-  return response.json();
-})
-.then(userData => {
-  // Отображаем данные пользователя на сайте
-  document.getElementById('amountdep').textContent = userData.deposit
-  document.getElementById('profit-amount').textContent = userData.windeposit
-  document.getElementById('amount').textContent = userData.trades;
-  document.getElementById('amountdepweek').textContent = userData.deposit//доделать потом
-  document.getElementById('amountweek').textContent = userData.trades;//доделать потом
-})
-.catch((error) => {
-  console.error('Ошибка:', error);
-  document.getElementById('user-data').textContent = 'Ошибка при загрузке данных пользователя: ' + error.message;
-});
-
-} else {
-document.getElementById('tg-id').textContent = 'Ошибка: initDataUnsafe не доступен.';
-document.getElementById('user-data').textContent = '';
-}
-    </script>
     <div class="medium-text">Hello,</div>
-    <div class="nickname">Abdulbek</div>
+    <div class="nickname" id="nickname">Abdulbek</div>
     <div class="green-circle">
-        <div class="inner-circle">
+        <div class="inner-circle" id="telegram_icon">
             <img src="https://i.postimg.cc/6Q9TFVmy/1614438613-1-p-temnii-fon-noch-1.jpg" alt="Image" class="circle-image">
         </div>
     </div>
@@ -84,7 +22,7 @@ document.getElementById('user-data').textContent = '';
         <div class="black-rectangle">
             <div class="total-profit">Total Profit</div>
             <div class="date">December 31, 2000</div>
-            <div class="profit-amount">45000</div>
+            <div class="profit-amount" id="profit-amount">45000</div>
             <div class="percent">356</div>
         </div>
         <img src="assets/Polygon 1.svg" alt="Trapezoid" class="trapezoid-svg">
@@ -94,15 +32,15 @@ document.getElementById('user-data').textContent = '';
     </div>
     <div class="gray-rectangle left">
         <div class="total">Total trades</div>
-        <div class="amount">69</div>
+        <div class="amount" id="amount">69</div>
         <div class="line"></div>
-        <div class="week">292</div>
+        <div class="week" id="amountweek">292</div>
     </div>
     <div class="gray-rectangle right">
         <div class="total">Total deposit</div>
-        <div class="amount">1488</div>
+        <div class="amount" id="amountdep">1488</div>
         <div class="line"></div>
-        <div class="week">2020</div>
+        <div class="week" id="amountdepweek">2020</div>
     </div>
     <div class="ref">Referral Programs</div>
     <div class="more">See more</div>
@@ -124,9 +62,7 @@ document.getElementById('user-data').textContent = '';
         <img src="assets/viemka.svg" alt="SVG Image" class="svg1">
       </div>
       <div class="PlayButton">
-        <a href="lobby.html">
-          <img src="assets/PlayButton.svg" alt="SVG Image">
-        </a>
+        <img src="assets/PlayButton.svg" alt="SVG Image">
       </div>
     </div>
     <div class="bottom-icon left">
@@ -135,5 +71,7 @@ document.getElementById('user-data').textContent = '';
     <div class="bottom-icon right">
       <img src="assets/walButton.svg" alt="SVG Image">
     </div>
+
+    <script src="profile.js"></script>
 </body>
 </html>
